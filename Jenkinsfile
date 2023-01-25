@@ -8,8 +8,8 @@ git 'https://github.com/BThangaraju/Jenkins.git'
 }
 stage('Build Code') {
 steps {
-sh "cc hello.c -o hello"
-sh "./hello"
+sh "gcc hello.c"
+sh "./a.out"
 }
 }
 stage('Test Code') {
