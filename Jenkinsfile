@@ -8,6 +8,7 @@ git 'https://github.com/BThangaraju/Jenkins.git'
 }
 stage('Build Code') {
 steps {
+sh "chmod u+x hello.c"
 sh "gcc hello.c"
 sh "./a.out"
 }
