@@ -8,14 +8,15 @@ git 'https://github.com/BThangaraju/Jenkins.git'
 }
 stage('Build Code') {
 steps {
-sh "chmod u+x Prog1.py"
-sh "./Prog1.py"
+sh "cc hello.c -o hello"
+sh "./hello.c"
 }
 }
 stage('Test Code') {
 steps {
-sh "chmod u+x Test.py"
-sh "./Test.py"
+sh "cc hello.c -o hello"
+sh "./hello.c"
+sh "./hello.c"
 }
 }
 }
